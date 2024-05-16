@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+}
+
+header{
+    background-color: rgb(199, 139, 255);
+    height: 10vh;
+}
+
+main{
+    background-color: rgb(210, 200, 255);
+    height: 90vh;
+}
+
+.nav{
+    display: flex;
+    color: white;
+    font-size: 4vh;
+}
+
+.element{
+    margin-left: 5vw;
+}
+
+.element a{
+    text-decoration: none;
+    color: white;;
+}
+
+.news{
+    color: white;
+    width: 60vw;
+    background-color: rgba(117, 117, 117, 0.336);
+    border: solid grey;
+}
+
+.news img{
+    width: 20vw;
+}
+
+.date{
+    color: white;
+}
