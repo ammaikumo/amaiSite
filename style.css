@@ -16,6 +16,7 @@ main{
     display: flex;
     color: white;
     font-size: 4vh;
+    justify-content: center;
 }
 
 .element{
@@ -27,15 +28,37 @@ main{
     color: white;;
 }
 
-.news{
+.newsInfo{
     color: white;
     width: 60vw;
-    background-color: rgba(117, 117, 117, 0.336);
-    border: solid grey;
 }
 
-.news img{
+.wrapper{
+    border: solid grey;
+    background-color: rgba(117, 117, 117, 0.336);
+    position: absolute;
+}
+
+.newsInfo img{
+    width: 100%;
+}
+
+.headerGame{
+    text-align: center;
+    color: white;
+}
+.date{
+    color: white;
+}
+
+.screen{
     width: 20vw;
+    text-align: center;
+    float: left;
+}
+
+.about{
+    margin-left: 22vw;
 }
 
 .date{
