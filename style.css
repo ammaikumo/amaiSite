@@ -1,0 +1,96 @@
+/* Сброс отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Стили для шапки */
+header {
+    background-color: rgb(199, 139, 255);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    color: white;
+    font-size: 4vh;
+    justify-content: center;
+    width: 100%;
+}
+
+.element {
+    margin: 0 2.5vw;
+}
+
+.element a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Стили для основной части */
+main {
+    background-color: rgb(210, 200, 255);
+    padding: 2vh 0;
+}
+
+.news {
+    margin: 2vh auto;
+    width: 80vw;
+}
+
+.wrapper {
+    border: 1px solid grey;
+    background-color: rgba(117, 117, 117, 0.336);
+    padding: 2vh;
+    position: relative;
+}
+
+.headerGame {
+    text-align: center;
+    color: white;
+}
+
+.date {
+    color: white;
+    display: block;
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+.newsInfo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+}
+
+.screen {
+    width: 20vw;
+    text-align: center;
+}
+
+.screen img {
+    width: 100%;
+}
+
+.about {
+    margin-left: 22vw;
+    flex-grow: 1;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 1vh 2vw;
+    background-color: rgb(199, 139, 255);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: rgb(170, 118, 216);
+}
