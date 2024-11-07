@@ -1,18 +1,20 @@
+/* Подключение шрифта из Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 /* Сброс отступов */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Используем новый шрифт */
 }
-
 /* Стили для шапки */
 header {
-    background-color: rgb(199, 139, 255);
+    background: linear-gradient(90deg, rgba(199, 139, 255, 1) 0%, rgba(170, 118, 216, 1) 100%);
     height: 10vh;
     display: flex;
     align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
-
 .nav {
     display: flex;
     color: white;
@@ -20,68 +22,67 @@ header {
     justify-content: center;
     width: 100%;
 }
-
 .element {
     margin: 0 2.5vw;
 }
-
 .element a {
     text-decoration: none;
     color: white;
+    transition: color 0.3s;
 }
-
+.element a:hover {
+    color: #ffeb3b; /* Цвет при наведении */
+}
 /* Стили для основной части */
 main {
     background-color: rgb(210, 200, 255);
     padding: 2vh 0;
     min-height: 90vh;
 }
-
 .news {
     margin: 2vh auto;
     width: 80vw;
 }
-
 .wrapper {
     border: 1px solid grey;
     background-color: rgba(117, 117, 117, 0.336);
     padding: 2vh;
     position: relative;
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Тень */
+    transition: transform 0.3s; /* Плавный переход */
 }
-
+.wrapper:hover {
+    transform: translateY(-5px); /* Эффект при наведении */
+}
 .headerGame {
     text-align: center;
     color: white;
 }
-
 .date {
     color: white;
     display: block;
     text-align: center;
     margin-bottom: 1vh;
 }
-
 .newsInfo {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     color: white;
 }
-
 .screen {
     width: 20vw;
     text-align: center;
 }
-
 .screen img {
     max-height: 30vh;
+    border-radius: 10px; /* Закругленные углы для изображений */
 }
-
 .about {
     margin-left: 22vw;
     flex-grow: 1;
 }
-
 .download-button {
     display: inline-block;
     padding: 1vh 2vw;
@@ -89,9 +90,9 @@ main {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s; /* Добавляем анимацию */
 }
-
 .download-button:hover {
     background-color: rgb(170, 118, 216);
+    transform: scale(1.05); /* Увеличение при наведении */
 }
